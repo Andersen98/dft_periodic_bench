@@ -1,0 +1,2 @@
+Fermi_energy (from nscf) 6.5512 ev
+cell length (from geometry_opt): 10.16825838 bohr

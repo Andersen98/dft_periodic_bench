@@ -1,0 +1,26 @@
+&control
+    calculation = 'scf'
+    restart_mode='from_scratch'
+    prefix = 'si'
+    outdir = './outdir'
+    pseudo_dir = '../pseudo'
+/
+&system
+    ibrav=2, celldm(1) =10.16825838, 
+    nat=2, ntyp=1,
+    ecutwfc=40
+    ecutrho=320
+    nbnd=8
+    occupations='smearing', smearing='fd',degauss=.001
+/
+&electrons
+    conv_thr=1e-8
+/
+ATOMIC_SPECIES
+ Si  28.0855  Si.pz-hgh.UPF
+ 
+ATOMIC_POSITIONS (alat)
+ Si 0.00 0.00 0.00 0 0 0 
+  Si 0.25 0.25 0.25 0 0 0
+K_POINTS (automatic)
+  8 8 8 0 0 0
